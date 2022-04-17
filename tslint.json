@@ -13,7 +13,11 @@
         ],
         "trailing-comma": false,
         "import-name": false,
-        "indent": false
+        "indent": [
+            true,
+            "spaces",
+            4
+        ]
     },
     "rulesDirectory": []
 }

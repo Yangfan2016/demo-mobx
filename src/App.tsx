@@ -3,6 +3,7 @@ import { Provider } from 'mobx-react';
 // import './App.css';
 import Casual from './component/Casual';
 import Store from './store/store';
+import Task from 'component/Task';
 
 const store = {
     store: new Store()
@@ -16,6 +17,8 @@ class App extends React.Component {
             <Provider {...store}>
                 <div>
                     <Casual />
+                    <Task />
+                    <h1>rerender{Date.now()}</h1>
                 </div>
             </Provider>
         );
