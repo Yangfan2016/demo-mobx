@@ -1,7 +1,7 @@
-import { Provider } from "mobx-react"
-import * as React from 'react';
-import './App.css';
-import Casual from "./component/Casual"
+import React from 'react';
+import { Provider } from 'mobx-react';
+// import './App.css';
+import Casual from './component/Casual';
 import Store from './store/store';
 
 const store = {

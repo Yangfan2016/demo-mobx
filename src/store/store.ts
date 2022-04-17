@@ -1,4 +1,4 @@
-import { action, computed, observable } from "mobx"
+import { action, computed, observable } from 'mobx';
 
 class Store {
     // 被观察者，你可以理解成Vuex中的State，也就是说，声明一些想要观察的状态，变量。

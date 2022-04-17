@@ -1,5 +1,5 @@
 import { inject, observer } from 'mobx-react';
-import * as React from "react"
+import React from 'react';
 import Store from '../store/store';
 
 // props要接受的值
