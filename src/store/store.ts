@@ -1,4 +1,4 @@
-import { makeAutoObservable, observable, } from 'mobx';
+import { makeAutoObservable, observable, when, } from 'mobx';
 
 class Store {
     // 被观察者，你可以理解成Vuex中的State，也就是说，声明一些想要观察的状态，变量。
@@ -11,6 +11,7 @@ class Store {
 
     constructor() {
         makeAutoObservable(this)
+        when(() => this.num === 2, () => this.num2 = 100)
     }
 
     public get retunum() {

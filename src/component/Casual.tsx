@@ -18,6 +18,7 @@ class Casual extends React.Component<IProps, {}> {
         return (
             <div>
                 <h1>{this.props.store?.num}</h1>
+                <h1>{this.props.store?.num2}</h1>
                 <h2>{this.props.store?.retunum}</h2>
                 <h2>{this.props.store?.addNum}</h2>
                 <button onClick={this.onClickAdd}>增加num</button>
